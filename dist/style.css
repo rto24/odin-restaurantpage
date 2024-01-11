@@ -1,3 +1,7 @@
+:root {
+  --navBarColor: #60a5fa;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +17,7 @@
 .navBar {
   display: flex;
   height: 100px;
+  background-color: var(--navBarColor);
 }
 
 ul {
@@ -22,5 +27,9 @@ ul {
   align-items: center;
   list-style: none;
   gap: 20px;
+}
+
+li {
+  text-transform: uppercase;
 }
 
