@@ -1,4 +1,5 @@
 // import _ from 'lodash';
+const content = document.querySelector('.content');
 
 function createHtml(type, id, classList, content) {
   const element = document.createElement(type);
@@ -10,3 +11,4 @@ function createHtml(type, id, classList, content) {
   return element;
 }
 
+export { createHtml, content };
