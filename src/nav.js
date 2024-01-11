@@ -7,4 +7,10 @@ function renderItems() {
   navItem.forEach((navItem) => 
     list.appendChild(createHtml('li', null, null, navItem))
   );
+
+  const navCont = document.createElement('div');
+  navCont.appendChild(list);
+  content.appendChild(navCont);
 }
+
+
