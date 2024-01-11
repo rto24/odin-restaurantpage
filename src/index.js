@@ -23,12 +23,28 @@ function homePage() {
 
 function menuPage() {
   content.innerHTML = "";
-}
+  renderNav();
+  renderFooter();
+};
 
 function aboutPage() {
   content.innerHTML = "";
-}
+  renderNav();
+  renderFooter();
+};
 
 homePage();
+
+document.addEventListener('click', (e) => {
+  const target = e.target.innerText;
+
+  if (target === 'HOME') {
+    homePage();
+  } else if (target === 'MENU') {
+    menuPage();
+  } else if (target === 'ABOUT') {
+    aboutPage();
+  }
+});
 
 export { createHtml, mainContent };
