@@ -1,16 +1,18 @@
-import { createHtml, content } from "./index";
+import { createHtml, mainContent } from "./index";
 
 function renderItems() {
   const navItem = ['home', 'menu', 'about']
   const list = document.createElement('ul');
 
-  navItem.forEach((navItem) => 
-    list.appendChild(createHtml('li', null, null, navItem))
+  navItem.forEach((item) => 
+    list.appendChild(createHtml('li', null, null, item))
   );
 
   const navCont = document.createElement('div');
+  navCont.classList.add('navBar');
+  mainContent.appendChild(navCont);
   navCont.appendChild(list);
-  content.appendChild(navCont);
+  
 }
 
 export { renderItems as renderNav };
