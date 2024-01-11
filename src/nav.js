@@ -13,4 +13,4 @@ function renderItems() {
   content.appendChild(navCont);
 }
 
-
+export { renderItems as renderNav };
