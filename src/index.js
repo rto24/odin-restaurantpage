@@ -1,5 +1,6 @@
 import { renderNav } from "./nav";
 import { renderHome } from "./home";
+import { renderFooter } from "./footer";
 
 const mainContent = document.getElementById("content");
 
@@ -15,5 +16,6 @@ function createHtml(type, id, classList, content) {
 
 renderNav();
 renderHome();
+renderFooter();
 
 export { createHtml, mainContent };
