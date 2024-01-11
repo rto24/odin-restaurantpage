@@ -38,7 +38,11 @@ li {
 /* titles */
 .title-cont {
   display: flex;
+  flex-direction: column;
   margin-bottom: auto;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 /* footer */
