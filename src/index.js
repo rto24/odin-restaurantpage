@@ -14,8 +14,21 @@ function createHtml(type, id, classList, content) {
   return element;
 }
 
-renderNav();
-renderHome();
-renderFooter();
+function homePage() {
+  content.innerHTML = "";
+  renderNav();
+  renderHome();
+  renderFooter();
+};
+
+function menuPage() {
+  content.innerHTML = "";
+}
+
+function aboutPage() {
+  content.innerHTML = "";
+}
+
+homePage();
 
 export { createHtml, mainContent };
