@@ -14,6 +14,17 @@ function renderItems() {
     ['about-desc'], 
     'Restaurant description goes here'
   );
+
+  const aboutCont = createHtml(
+    'div',
+    null,
+    ['about-container'],
+    null
+  );
+
+  mainContent.appendChild(aboutCont);
+  aboutCont.appendChild(aboutHeader);
+  aboutCont.appendChild(aboutDesc);
 }
 
 export { renderItems as renderAbout };
